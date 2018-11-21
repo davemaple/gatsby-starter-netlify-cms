@@ -31,6 +31,14 @@
   "keywords": [
     "gatsby"
   ],
+  "scripts": {
+    "build": "gatsby build",
+    "serve": "gatsby serve -p 8080",
+    "develop": "gatsby develop -p 8080",
+    "format": "prettier --write '**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm install && npm run build && cp nortonsw_38a3b790-c526-0.html public/ && s3_website push --force"
+  },
   "license": "MIT",
   "main": "n/a",
   "scripts": {
